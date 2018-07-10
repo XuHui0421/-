@@ -1,0 +1,214 @@
+@import '../variables.less';
+.container-wrap{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+    background-color: #fff;
+    // overflow: hidden;
+    display: flex;
+    flex: auto;
+}
+.header{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.container-left,.container-right{
+    border: 1px solid #e6e6e6;
+    // min-height: 2500px;
+    // margin-bottom: -2000px;
+    // padding-bottom: 2000px;
+    
+}
+.container-left{
+    // width: 26%; 
+    // float:left;
+    width: 320px;
+    flex: 0 0 320px;
+    position: relative;
+    border-right: none;
+}
+.container-right{
+    // margin-left: 26%;
+    flex: auto;
+}
+
+.detail-header{
+    height: 47px;
+    padding: 10px;
+    border-bottom: 1px solid #3a98d8;
+    .header-drop{
+        float: left;
+    }
+    .header-right{
+        float: right;
+        button{
+            height: 26px;
+            margin-right: 10px;
+        }
+    }
+}
+.detail-tab{
+    position: relative;
+}
+.triangle-topright{
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    top: -21px;
+    right: -3px;
+    border-top: 70px solid @base; 
+    border-left: 70px solid transparent; 
+    background-color: transparent;
+    color:#fff;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 10;
+    &.danger{
+        border-top: 70px solid #f96969; 
+    }
+    span{
+        position: absolute;
+        top: -55px;
+        left: -40px;
+    }
+}
+.detail-list-wrap{
+    // padding: 10px 0 70px 0;
+    .list-search{
+        overflow: hidden;
+        padding: 10px;
+        border-bottom: 1px solid #e6e6e6;
+        .list-input{
+            float: left;
+            width: 180px;
+        }
+        // button{
+        //     max-width: 56px;
+        //     width: 19%;
+        //     float: right;
+        //     padding: 7px 0;
+        // }
+    }
+}
+.multi-line{
+    li{
+        height: 70px;
+        padding: 0 10px;
+        border-bottom: 1px solid #e6e6e6;
+        text-align: left;
+        color: #333;
+        .el-checkbox{
+            line-height: 70px;
+            margin-right: 20px;
+            float: left;
+        }
+        .item{
+            float: left;
+            div{
+                height: 33px;
+                line-height: 33px;
+            }
+        }
+        .item-rt{
+            float: right;
+            text-align: center;
+        }
+    }
+}
+.list-num{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid @gray-base;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 0;
+    // border-bottom: 1px solid #e6e6e6;
+}
+.detail-title{
+    font-size: 26px;
+    color: #333;
+    float: left;
+    line-height: 26px;
+}
+.operate-list{
+    float: right;
+    margin-right:10px;
+}
+.detail-tab{
+    margin: 10px;
+    font-size: 12px; 
+}
+.detail-body{
+    margin: 10px;
+    position: relative;
+}
+.detail-info{
+    margin: 35px;
+    overflow: hidden;
+    li{
+        width: 30%;
+        float: left;
+        margin-right: 3%;
+        margin-bottom: 25px;
+        label{
+            display: inline-block;
+            color: @base;
+            margin-right: 10px;
+            text-align: right;
+        }
+    }
+    &.label80{
+        label {width: 80px;}
+    }
+    &.label100{
+        label {width: 100px;}
+    }
+    &.label110{
+        label {width: 110px;}
+    }
+    &.label-gray{
+        label{
+            color: #999;
+        }
+    }
+    &.label-right{
+        label{
+            text-align: right;
+        }
+        
+    }
+}
+.img-full{
+    width: 100%;
+}
+.file-list{
+    overflow: hidden;
+    li{
+        width: 100px;
+        height: 120px;
+        padding: 5px 10px;
+        margin: 10px;
+        text-align: center;
+        float: left;
+        .file-img{
+            width: 65px;
+            height: 65px;
+        }
+        .file-title{
+            margin: 5px 0;
+        }
+        .download{
+            color: @base;
+        }
+    }
+}
+.tab-info-title{
+    padding: 5px 10px;
+    margin: 10px 0;
+    background: #f5f8fa;
+}
+.finance-process-box{
+    background: #f3faff;
+    margin: 10px 0;
+}

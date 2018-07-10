@@ -1,0 +1,101 @@
+.finance-detail-body{
+    border:1px solid @gray-base;
+    border-bottom: none;
+    .detail-body-subheader{
+        line-height: 30px;
+        padding: 10px 30px;
+        border-bottom: 1px solid @gray-base;
+    }
+    .detail-body-header{
+        line-height: 30px;
+        padding: 10px 30px;
+        border-bottom: 1px solid @gray-base;
+        color: @lighter-base;
+        span{font-weight: 600;}
+        overflow: hidden;
+        .finance-item-label{
+            display: inline-block;
+            margin-right: 10px;
+            text-align: right;
+        }
+        .finance-item-info{
+            position: relative;
+            font-size: 14px;
+        }
+    }
+}
+.finance-detail-list{
+    overflow: hidden;
+    li{
+        width: 28%;
+        float: left;
+        margin: 20px;
+        color: #666;
+        .item-label{
+            display: inline-block;
+            width: 60px;
+            color: @base;
+            text-align: right;
+            margin-right: 10px;
+        }
+    }
+}
+.file-list{
+    overflow: hidden;
+    li{
+        width: 100px;
+        height: 120px;
+        padding: 5px 10px;
+        margin: 10px;
+        text-align: center;
+        float: left;
+        .file-img{
+            width: 65px;
+            height: 65px;
+        }
+        .file-title{
+            margin: 5px 0;
+        }
+        .download{
+            color: @base;
+        }
+    }
+}
+.tab-content{
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 14px;
+    .tab-info-title{
+        font-size: 24px;
+        font-weight: bold;
+        color: @base;
+        text-align: center;
+        margin:0 10px;
+        background: none;
+        .title-tip{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            border-radius: 50%;
+            background-color: #65b1db;
+            font-size: 6px;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+    }
+    .info-wrap{
+        padding: 10px;
+    }
+}
+.w80{
+    width: 80px;
+}
+.text-overflow{
+    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

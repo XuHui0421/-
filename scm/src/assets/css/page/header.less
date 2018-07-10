@@ -1,0 +1,134 @@
+.scm-header{
+    height: 52px;
+    line-height: 36px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+}
+.scm-header-lf{
+    text-align: left;
+    float: left;
+    font-size: 14px;
+}
+.scm-header-rt{
+    position: absolute;
+    right: 10px;
+}
+.header-search{
+    width: 220px;
+    float: left;
+    margin-right: 25px;
+}
+.icon-box{
+    display: inline-block;
+    margin-right: 25px;
+    cursor: pointer;
+    .iconfont{
+        font-size: 25px;
+        vertical-align: middle;
+        color: #2c3e50;
+    }
+    
+}
+.user-info,.lang{ 
+    display: inline-block;
+    margin-right: 10px;
+}
+.face{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.lang-flag{
+    width: 25px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.header-nav-menu{
+    position: relative;
+    float: left;
+    height: 50px;
+    &:hover{
+        .message-box{
+            display: block;
+        }
+    }
+
+    .message-box{
+        display: none;
+        width: 300px;
+        height: 195px;  
+        position: absolute;
+        top: 50px;
+        left: -138px;
+        padding-top:20px;
+        background-color: #fff;
+        box-shadow: 0 1px 12px 0 rgba(0,0,0,.2);
+        z-index: 100;
+        &:hover{
+            display: block;
+        }
+        &::before{
+            content: '';
+            width: 0px;
+            height: 0px;
+            display: inline-block;
+            position: absolute;
+            top: -5px;
+            left: 144px;
+            background: #fff;
+            border-style: solid;
+            border-width: 6px;
+            border-color: transparent #fff  #fff transparent ;
+            box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.2);
+            transform:rotate(45deg);
+        }
+        .message-box-list{
+            height: 135px;
+            padding: 0 10px;
+            li+li{
+                border-top: 1px solid #e6e6e6;
+            }
+        }
+        .item-title{
+            width: 200px;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            vertical-align: bottom;
+            font-size: 16px;
+
+        }
+        .item-date{
+            float: right;
+            font-size: 12px;
+            color: #999;
+        }
+        .item-content{
+            margin-top: -10px;
+            color: #999;
+        }
+        .message-btn{
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-top: 1px solid #e6e6e6;
+            cursor: pointer;
+        }
+    }
+}
+.no-message-box{
+    width: 100%;
+    text-align: center;
+    img{
+        width: 150px;
+        height: 120px;
+    }
+}
+
+
+
+

@@ -1,0 +1,108 @@
+@import '../variables.less';
+
+.detail-body-title{
+    font-size: 15px;
+    color: @base;
+    text-align: center;
+    margin: 15px 10px;
+}
+.bill-info{
+    overflow: hidden;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 5px;
+    .item-info{
+        color: @base;
+    }
+}
+.bill-box{
+    .bill-table tbody tr:nth-child(n+3){
+        background: #f4fbff;
+    }
+    table{
+        width: 100%;
+        table-layout: fixed;
+        tr{
+            border-bottom: 1px solid #e6e6e6;
+            td{
+                padding: 10px;
+                border-right: 1px solid #e6e6e6;
+            }
+        }
+        .no-border{
+            border: none;
+        }
+    }
+    .label{
+        width: 85px;
+        display: inline-block;
+        text-align-last: justify;
+    }
+    .info{
+        margin-left: 15px;
+        color: @base;
+    }
+}
+.bill-row{
+    overflow: hidden;
+    &:not(:last-child){
+        border-bottom: 1px solid #e6e6e6;
+    }
+    &.bill-row-center{text-align: center}
+    &.bill-row-height{min-height: 40px;}
+    .el-col{
+        border-right: 1px solid #e6e6e6;
+        padding: 10px 0;
+    }
+    .h-auto{
+        .el-col{
+            margin-bottom: -9999px;
+            padding-bottom: 9999px;
+        }
+    }
+    .cell{
+        padding: 10px 5px;
+        float:left;
+        margin-bottom: -2000px;
+        padding-bottom: 2000px;
+        &:not(:last-child){
+            border-right: 1px solid #e6e6e6;
+        }
+        &.cell-no-border{
+            border: none;
+        }
+        &.cell-Vertical{
+            width: 53px;
+            line-height: 44px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            word-wrap: break-word;
+        }
+        &.cell-info{
+            width: 50%;
+            div{
+                margin: 10px; 
+            }
+            .label{
+                width: 85px;
+                display: inline-block;
+                text-align-last: justify;
+            }
+            .info{
+                color: @base;
+                margin-left: 10px;
+            }
+        }
+        &.cell-center{text-align: center;}
+        &.cell-w-25{width: 25%;}
+        &.cell-w-30{width: 30%;}
+        &.cell-w-15{width: 15%;}
+        &.cell-w-5{width: 5%;}
+        &.cell-w-10{width: 10%;}
+        .info{
+            margin: 20px 0;
+            color: @base;
+        }
+        
+    }
+}

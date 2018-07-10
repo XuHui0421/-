@@ -1,0 +1,74 @@
+.fiance-process-wrap{
+    width: 970px;
+    margin: 0 auto;
+    min-height: 215px; 
+    padding:10px;
+    em{
+        width: 30px;
+        display: inline-block;
+        border: 1px dashed #e6e6e6;
+        &.line-long{
+            width: 83px;
+        }
+    }
+}
+.process-parent{
+    vertical-align: middle;
+    display: inline-block; 
+}
+.process-child{
+    vertical-align: middle;
+    display: inline-block; 
+    .child+.child{
+        margin-top: 50px;
+    }
+}
+.process-circular{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    background: linear-gradient(to bottom,#d3dadf,#e1e7eb);
+    text-align: center;
+    color: #999;
+    position: relative;
+    .check-box{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid #e6e6e6;
+        background: #fff;
+        padding: 2px 0;
+        display: none;
+        position: absolute;
+        bottom: -1px;
+        right: 6px;
+
+    }
+    i{
+        color: #3497db;
+        position: absolute;
+        bottom: 0;
+        right: 1px;
+    }
+    &.active{
+        border: 2px solid #aad4f1;
+        color: #333;
+    }
+    &.finish{
+        background: #3497db;
+        color: #fff;
+        .check-box{display: block;}
+    }
+}
+.vertical-line-box{
+    display: inline-block;
+    position: relative;
+    .vertical-line{
+        width: 1px; 
+        height: 120px;
+        position: absolute;
+        bottom: -61px;
+    }
+}
